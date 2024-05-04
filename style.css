@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1d9a94;
+}
+
+p {
+  font-size: 1rem; /*16px*/
+  line-height: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.main-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* button */
+.btn {
+  padding: 0.5rem 1rem;
+  background: rgb(159, 222, 227);
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+
+/* title */
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: rgb(255, 255, 255);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.pre-title::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav {
+  /* Navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1d9a9480; /* Ubah sesuai dengan warna latar belakang navbar Anda */
+  z-index: 1000; /* Pastikan navbar muncul di atas konten lain */
+
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  transition: 0.2s ease-in-out;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  margin-left: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: auto;
+}
+
+.logo a {
+  color: black;
+}
+
+nav ul li a {
+  color: black;
+}
+
+/* Home Section */
+#home {
+  height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-name {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem;
+  color: black;
+}
+.home-right img {
+  width: 400px;
+  border-radius: 0.5rem;
+}
+.home-right {
+  display: flex;
+  justify-content: center;
+}
+
+.home-left p {
+  font-size: 1.1rem;
+}
+section {
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+}
+
+/* Portfolio*/
+#about {
+  background-color: #80bdba;
+  padding: 5rem 0;
+}
+
+.section-title-about {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+/* layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.about {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #3e5e5d;
+  border-radius: 0.7rem;
+}
+
+.about h4 {
+  color: #80bdba;
+  margin: 0.5rem 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.about p {
+  color: white;
+  text-align: left;
+}
+
+/* .about-icon {
+  background-color: #80bdba;
+  width: max-content;
+  margin: 0 auto;
+  padding: 3rem 3.3rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+} */
+/* .about-icon img {
+  width: 200px;
+} */
+
+/* end of portfolio */
+
+/* Tentang saya */
+#skills {
+  padding: 4rem 0;
+  background: white;
+  height: 100vh;
+}
+
+.section-title-skills {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.experience {
+  display: flex;
+  gap: 2rem;
+}
+
+.experience line {
+  padding: 0 0.7rem;
+}
+
+.experience .line div {
+  width: 2px;
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
+.experience-inf0 {
+  margin: 0.3rem 0;
+}
+
+.experience-date {
+  margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-right {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+.skills-right p {
+  font-size: 1.1rem;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+}
+/* End tentang saya */
+
+/* Contact Section */
+
+#contact {
+  padding: 5rem;
+  background: #ffffff;
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Robot", sans-serif;
+  background: white;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.7rem 1.3rem;
+  background-color: #3e5e5d;
+  color: white;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: rgb(209, 207, 207);
+  color: black;
+}
+/* End of Contact */
+
+/* footer */
+footer {
+  margin-bottom: 0;
+  padding: 2rem 0;
+  background: #3e5e5d;
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+  fill: black;
+}
+
+.footer-icons {
+  fill: gray;
+}
